@@ -140,7 +140,7 @@ const handleYesClick = () => {
     const randomIndex = Math.floor(Math.random() * dateIdeas.length);
     const selectedDateIdea = dateIdeas[randomIndex];
 
-    alert(`I CANT WAIT TO SEE YOU ANGEL BABY PRINCESS`);
+    alert(`YOU HAVE WON UNLIMITED UPPIES`);
   });
 
   // Replace yesBtn with the new letsGoBtn
