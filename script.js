@@ -121,7 +121,7 @@ const handleYesClick = () => {
 
   // Create and style a new button for Let's Go!
   const letsGoBtn = document.createElement("button");
-  letsGoBtn.textContent = "Click for Prize";
+  letsGoBtn.textContent = "Click for PRIZE!!";
   letsGoBtn.classList.add("letsgo-btn"); // You can add a class for styling if needed
   letsGoBtn.style.position = "absolute";
 
@@ -140,7 +140,7 @@ const handleYesClick = () => {
     const randomIndex = Math.floor(Math.random() * dateIdeas.length);
     const selectedDateIdea = dateIdeas[randomIndex];
 
-    alert(`YOU HAVE WON UNLIMITED UPPIES`);
+    alert(`YOU WON UNLIMITED UPPIES`);
   });
 
   // Replace yesBtn with the new letsGoBtn
