@@ -129,7 +129,7 @@ const handleYesClick = () => {
   if (window.innerWidth <= 800) {
     letsGoBtn.style.left = "95%";
   } else {
-    letsGoBtn.style.left = "63%";
+    letsGoBtn.style.left = "60%";
   }
 
   letsGoBtn.style.transform = "translate(-50%, -50%)";
