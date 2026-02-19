@@ -15,19 +15,11 @@ const handleYesClick = () => {
 
   // Create and style a new button for Let's Go!
   const letsGoBtn = document.createElement("button");
+  const letsGoBtn = document.createElement("button");
   letsGoBtn.textContent = "CLAIM PRIZE!!";
-  letsGoBtn.classList.add("letsgo-btn"); // You can add a class for styling if needed
-  letsGoBtn.style.position = "absolute";
+  letsGoBtn.classList.add("letsgo-btn"); 
 
-  // Adjust the left position based on screen width
-  if (window.innerWidth <= 800) {
-    letsGoBtn.style.left = "95%";
-  } else {
-    letsGoBtn.style.left = "60%";
-  }
-
-  letsGoBtn.style.transform = "translate(-50%, -50%)";
-  letsGoBtn.style.width = "200px"; // Adjust the width as needed
+  document.querySelector(".btn-group").appendChild(letsGoBtn);
 
   // Add a click event listener to prompt the user with random romantic date ideas
   letsGoBtn.addEventListener("click", () => {
@@ -49,5 +41,6 @@ const handleNoMouseOver = () => {
 
 yesBtn.addEventListener("click", handleYesClick);
 noBtn.addEventListener("mouseover", handleNoMouseOver);
+
 
 
