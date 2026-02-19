@@ -15,7 +15,6 @@ const handleYesClick = () => {
 
   // Create and style a new button for Let's Go!
   const letsGoBtn = document.createElement("button");
-  const letsGoBtn = document.createElement("button");
   letsGoBtn.textContent = "CLAIM PRIZE!!";
   letsGoBtn.classList.add("letsgo-btn"); 
 
@@ -41,6 +40,7 @@ const handleNoMouseOver = () => {
 
 yesBtn.addEventListener("click", handleYesClick);
 noBtn.addEventListener("mouseover", handleNoMouseOver);
+
 
 
 
