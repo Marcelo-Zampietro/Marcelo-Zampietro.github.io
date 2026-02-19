@@ -4,6 +4,15 @@ const gif = qs(".gif");
 const [yesBtn, noBtn] = [".yes-btn", ".no-btn"].map(qs);
 
 const handleYesClick = () => {
+    fetch("https://formspree.io/f/xbdaajej", {
+        method: "POST",
+        body: JSON.stringify({ message: "Yes clicked!" }),
+        headers: { 
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    }).catch(err => console.error("Notification failed", err));
+
   question.innerHTML = "Good choice.";
   gif.src = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjBrc2p1ajdraG5meWRtcWNzbXRiajFuMm8weHRkd3MxNzdocXFoaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Km3JPJqGgJej8fNQMc/giphy.gif";
 
@@ -40,6 +49,7 @@ const handleNoMouseOver = () => {
 
 yesBtn.addEventListener("click", handleYesClick);
 noBtn.addEventListener("mouseover", handleNoMouseOver);
+
 
 
 
