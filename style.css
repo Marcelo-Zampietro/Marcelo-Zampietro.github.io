@@ -49,8 +49,8 @@ button {
 }
 
 button:nth-child(1) {
-    margin-left: -200px;
     background: #e94d58;
+    width: 200px;
 }
 
 button:nth-child(2) {
@@ -58,3 +58,4 @@ button:nth-child(2) {
     background: white;
     color: #e94d58;
 }
+
